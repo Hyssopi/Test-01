@@ -9,7 +9,7 @@ const NODE_IMAGE_DIRECTORY_PATH = './images/nodes/';
 // Creating Help/About Dialog box
 let helpAboutHtml = '';
 helpAboutHtml += `
-<div style="margin: 10px 0px 10px 10px; line-height: 2; font-size: 16px; font-family: playtimewithhottoddiesRg;">
+<div style="margin: 10px 0px 10px 10px; line-height: 2; font-size: 16px; font-family: Lobster;">
   <div style="padding: 0px 0px 10px 0px;">Interactive network graph visualizing Miraculous Ladybug<br>transformations and their relations.</div>
   <table style="padding: 0px 0px 10px 0px;">
     <tr>
