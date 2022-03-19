@@ -9,7 +9,7 @@ const NODE_IMAGE_DIRECTORY_PATH = './images/nodes/';
 // Creating Help/About Dialog box
 let helpAboutHtml = '';
 helpAboutHtml += `
-<div style="margin: 10px 0px 10px 10px; line-height: 2; font-size: 16px; font-family: Lobster;">
+<div style="margin: 10px 0px 10px 10px; line-height: 2; font-size: 16px; font-family: playtimewithhottoddiesRg;">
   <div style="padding: 0px 0px 10px 0px;">Interactive network graph visualizing Miraculous Ladybug<br>transformations and their relations.</div>
   <table style="padding: 0px 0px 10px 0px;">
     <tr>
@@ -206,7 +206,7 @@ function drawGraph(graphHtmlContainerId, graphData)
     {
       // Tooltip pop up when hovering over a node
       return `
-        <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: playtimewithhottoddiesRg; max-width: 300px;">
+        <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: Lobster; max-width: 300px;">
           ${node.label}
         </div>
       `;
@@ -296,7 +296,7 @@ function drawGraph(graphHtmlContainerId, graphData)
         let label = node.name;
         // Zoom out: globalScale is smaller (<1), Zoom in: globalScale is bigger (>40)
         let fontSize = ((6 / globalScale) < 2.5) ? 2.5 : (6 / globalScale);
-        ctx.font = ((highlightNodes.indexOf(node) !== -1) ? 'bold' : '') + ` ${fontSize}px playtimewithhottoddiesRg`;
+        ctx.font = ((highlightNodes.indexOf(node) !== -1) ? 'bold' : '') + ` ${fontSize}px Lobster`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         if ((highlightNodes.indexOf(node) !== -1) || (highlightNodes.length === 0))
@@ -330,7 +330,7 @@ function drawGraph(graphHtmlContainerId, graphData)
       if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
         return `
-          <div style="margin: 5px; line-height: 1.5; font-size: 20px; font-family: playtimewithhottoddiesRg;">
+          <div style="margin: 5px; line-height: 1.5; font-size: 20px; font-family: Lobster;">
             ${link.fullDescriptionHtml}
           </div>
         `;
@@ -406,9 +406,9 @@ function drawGraph(graphHtmlContainerId, graphData)
         let label = `${link.shortDescription}`;
         
         // Estimate font size to fit in link length
-        ctx.font = '1px playtimewithhottoddiesRg';
+        ctx.font = '1px Lobster';
         let fontSize = Math.min(EDGE_MAXIMUM_FONT_SIZE, maxTextLength / ctx.measureText(label).width);
-        ctx.font = `${fontSize}px playtimewithhottoddiesRg`;
+        ctx.font = `${fontSize}px Lobster`;
         let textWidth = ctx.measureText(label).width;
         let backgroundDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2);
         
