@@ -10,16 +10,16 @@ const NODE_IMAGE_DIRECTORY_PATH = './images/nodes/';
 let helpAboutHtml = '';
 helpAboutHtml += `
 <div style="margin: 10px 0px 10px 10px; line-height: 2; font-size: 16px; font-family: playtimewithhottoddiesRg;">
-  <div style="padding: 0px 0px 10px 0px;">Interactive network graph visualizing Katawa Shoujo<br>characters and their relations.</div>
+  <div style="padding: 0px 0px 10px 0px;">Interactive network graph visualizing Miraculous Ladybug<br>transformations and their relations.</div>
   <table style="padding: 0px 0px 10px 0px;">
     <tr>
       <td style="padding: 0px 10px 0px 0px; font-weight: bold;">GitHub Pages:</td>
-      <td><a target="_blank" href="https://hyssopi.github.io/Katawa-Shoujo-Character-Relation-Graph/" style="color: #0000EE;">Katawa Shoujo Character Relation Graph</a></td>
+      <td><a target="_blank" href="https://hyssopi.github.io/Katawa-Shoujo-Character-Relation-Graph/" style="color: #0000EE;">Miraculous Ladybug Transformation Graph</a></td>
     </tr>
     <tr>
       <td style="padding: 0px 10px 0px 0px; font-weight: bold;">Reference link:</td>
       <td>
-        <a target="_blank" href="https://katawashoujo.fandom.com/wiki/Category:Characters" style="color: #0000EE;">Katawa Shoujo Wiki</a>
+        <a target="_blank" href="https://miraculousladybug.fandom.com/wiki/Category:Characters" style="color: #0000EE;">Miraculous Ladybug Wiki</a>
       </td>
     </tr>
   </table>
@@ -47,7 +47,7 @@ helpAboutHtml += `
 let helpAboutDialog = $(helpAboutHtml).dialog(
 {
   dialogClass: 'removeCloseButton',
-  title: 'Katawa Shoujo Character Relation Graph',
+  title: 'Miraculous Ladybug Transformation Graph',
   width: 'auto',
   height: 'auto',
   position:
@@ -178,7 +178,7 @@ const NODE_LABEL_OFFSET_Y = 8.2;
 // Line width of highlighted edges
 const HIGHLIGHTED_EDGE_LINE_WIDTH = 6;
 // Background color of the container chart background and link label background
-const BACKGROUND_COLOR = '#FFF6E8';
+const BACKGROUND_COLOR = '#FAEDF0';
 
 // Reference of the ForceGraph
 let graph;
