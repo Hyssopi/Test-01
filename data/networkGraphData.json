@@ -125,7 +125,7 @@
   ],
   "edgeData":
   [
-    {"sourceId": "MARINETTE_DUPAIN-CHENG", "targetId": "TIKKI", "shortDescription": "TEMP", "fullDescriptionHtml": "", "direction": "NONE"},
-    {"sourceId": "MARINETTE_DUPAIN-CHENG", "targetId": "PLAGG", "shortDescription": "TEMP", "fullDescriptionHtml": "", "direction": "NONE"}
+    {"sourceId": "MARINETTE_DUPAIN_CHENG", "targetId": "TIKKI", "shortDescription": "TEMP", "fullDescriptionHtml": "", "direction": "NONE"},
+    {"sourceId": "MARINETTE_DUPAIN_CHENG", "targetId": "PLAGG", "shortDescription": "TEMP", "fullDescriptionHtml": "", "direction": "NONE"}
   ]
 }
