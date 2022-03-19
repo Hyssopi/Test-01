@@ -206,7 +206,7 @@ function drawGraph(graphHtmlContainerId, graphData)
     {
       // Tooltip pop up when hovering over a node
       return `
-        <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: Lobster; max-width: 300px;">
+        <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: playtimewithhottoddiesRg; max-width: 300px;">
           ${node.label}
         </div>
       `;
@@ -330,7 +330,7 @@ function drawGraph(graphHtmlContainerId, graphData)
       if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
         return `
-          <div style="margin: 5px; line-height: 1.5; font-size: 20px; font-family: Lobster;">
+          <div style="margin: 5px; line-height: 1.5; font-size: 20px; font-family: playtimewithhottoddiesRg;">
             ${link.fullDescriptionHtml}
           </div>
         `;
@@ -406,9 +406,9 @@ function drawGraph(graphHtmlContainerId, graphData)
         let label = `${link.shortDescription}`;
         
         // Estimate font size to fit in link length
-        ctx.font = '1px Lobster';
+        ctx.font = '1px playtimewithhottoddiesRg';
         let fontSize = Math.min(EDGE_MAXIMUM_FONT_SIZE, maxTextLength / ctx.measureText(label).width);
-        ctx.font = `${fontSize}px Lobster`;
+        ctx.font = `${fontSize}px playtimewithhottoddiesRg`;
         let textWidth = ctx.measureText(label).width;
         let backgroundDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2);
         
