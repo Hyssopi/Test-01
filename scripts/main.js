@@ -317,7 +317,15 @@ function drawGraph(graphHtmlContainerId, graphData)
     })
     .linkDirectionalArrowColor(function(link)
     {
-      return link.target.color;
+      if ((highlightNodes.indexOf(node) !== -1) || (highlightNodes.length === 0))
+      {
+        return link.target.color;
+      }
+      else
+      {
+        return link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16);
+      }
+      //return link.target.color;
     })
     .linkLabel(function(link)
     {
