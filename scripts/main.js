@@ -205,15 +205,16 @@ function drawGraph(graphHtmlContainerId, graphData)
     .nodeLabel(node =>
     {
       // Tooltip pop up when hovering over a node
-      if (node.label === '')
+      let nodeLabelHtml = '';
+      if (node.label !== '')
       {
-        return;
+        nodeLabelHtml = `
+          <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: playtimewithhottoddiesRg; max-width: 300px;">
+            ${node.label}
+          </div>
+        `;
       }
-      return `
-        <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: playtimewithhottoddiesRg; max-width: 300px;">
-          ${node.label}
-        </div>
-      `;
+      return nodeLabelHtml;
     })
     .nodeRelSize(NODE_RELATIVE_SIZE)
     .onNodeClick(node =>
