@@ -317,7 +317,6 @@ function drawGraph(graphHtmlContainerId, graphData)
     })
     .linkDirectionalArrowColor(function(link)
     {
-      /*
       if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
         return link.target.color;
@@ -326,8 +325,6 @@ function drawGraph(graphHtmlContainerId, graphData)
       {
         return link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16);
       }
-      */
-      return link.target.color;
     })
     .linkLabel(function(link)
     {
@@ -357,22 +354,17 @@ function drawGraph(graphHtmlContainerId, graphData)
       // Draw link line
       let lineGradient = ctx.createLinearGradient(link.source.x, link.source.y, link.target.x, link.target.y);
 
-
-      
       if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
-        //lineGradient.addColorStop(0, link.source.color);
-        //lineGradient.addColorStop(1, link.target.color);
+        lineGradient.addColorStop(0, link.source.color);
+        lineGradient.addColorStop(1, link.target.color);
       }
       else
       {
-        //lineGradient.addColorStop(0, link.source.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16));
-        //lineGradient.addColorStop(1, link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16));
+        lineGradient.addColorStop(0, link.source.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16));
+        lineGradient.addColorStop(1, link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16));
       }
 
-      lineGradient.addColorStop(0, link.source.color);
-      lineGradient.addColorStop(1, link.target.color);
-      
       ctx.beginPath();
       ctx.strokeStyle = lineGradient;
       ctx.moveTo(link.source.x, link.source.y);
@@ -386,11 +378,11 @@ function drawGraph(graphHtmlContainerId, graphData)
       // Set links to be partially transparent if not selected to be highlighted and with a non-empty highlight link list
       if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
-        //ctx.globalAlpha = 1.0;
+        ctx.globalAlpha = 1.0;
       }
       else
       {
-        //ctx.globalAlpha = UNSELECTED_OPACITY;
+        ctx.globalAlpha = UNSELECTED_OPACITY;
       }
       
       ctx.restore();
@@ -428,27 +420,29 @@ function drawGraph(graphHtmlContainerId, graphData)
         }
         
         let label = `${link.shortDescription}`;
-        
-        // Estimate font size to fit in link length
-        ctx.font = '1px playtimewithhottoddiesRg';
-        let fontSize = Math.min(EDGE_MAXIMUM_FONT_SIZE, maxTextLength / ctx.measureText(label).width);
-        ctx.font = `${fontSize}px playtimewithhottoddiesRg`;
-        let textWidth = ctx.measureText(label).width;
-        let backgroundDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2);
-        
-        // Draw text label (with background rectangle)
-        ctx.save();
-        ctx.translate(textPosition.x, textPosition.y);
-        ctx.rotate(textAngle);
-        
-        ctx.fillStyle = BACKGROUND_COLOR + (Math.trunc(255 * 0.8)).toString(16);
-        ctx.fillRect(-backgroundDimensions[0] / 2, -backgroundDimensions[1] / 2, ...backgroundDimensions);
-        
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = 'black';
-        ctx.fillText(label, 0, 0);
-        ctx.restore();
+        if (label === '')
+        {
+          // Estimate font size to fit in link length
+          ctx.font = '1px playtimewithhottoddiesRg';
+          let fontSize = Math.min(EDGE_MAXIMUM_FONT_SIZE, maxTextLength / ctx.measureText(label).width);
+          ctx.font = `${fontSize}px playtimewithhottoddiesRg`;
+          let textWidth = ctx.measureText(label).width;
+          let backgroundDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2);
+          
+          // Draw text label (with background rectangle)
+          ctx.save();
+          ctx.translate(textPosition.x, textPosition.y);
+          ctx.rotate(textAngle);
+          
+          ctx.fillStyle = BACKGROUND_COLOR + (Math.trunc(255 * 0.8)).toString(16);
+          ctx.fillRect(-backgroundDimensions[0] / 2, -backgroundDimensions[1] / 2, ...backgroundDimensions);
+          
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillStyle = 'black';
+          ctx.fillText(label, 0, 0);
+          ctx.restore();
+        }
       }
     })
     .dagLevelDistance(30)
