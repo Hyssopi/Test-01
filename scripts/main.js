@@ -317,7 +317,7 @@ function drawGraph(graphHtmlContainerId, graphData)
     })
     .linkDirectionalArrowColor(function(link)
     {
-      if ((highlightNodes.indexOf(node) !== -1) || (highlightNodes.length === 0))
+      if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
         return link.target.color;
       }
