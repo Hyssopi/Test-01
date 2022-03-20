@@ -321,14 +321,12 @@ function drawGraph(graphHtmlContainerId, graphData)
     })
     .linkDirectionalArrowColor(function(link)
     {
-      if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
+      let linkArrowColor = link.target.color;
+      if ((highlightLinks.indexOf(link) === -1) && (highlightLinks.length !== 0))
       {
-        return link.target.color;
+        linkArrowColor += link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16);
       }
-      else
-      {
-        return link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16);
-      }
+      return linkArrowColor;
     })
     .linkLabel(function(link)
     {
