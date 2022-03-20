@@ -205,6 +205,10 @@ function drawGraph(graphHtmlContainerId, graphData)
     .nodeLabel(node =>
     {
       // Tooltip pop up when hovering over a node
+      if (node.label === '')
+      {
+        return;
+      }
       return `
         <div style="margin: 5px; line-height: 1.5; font-size: 16px; font-family: playtimewithhottoddiesRg; max-width: 300px;">
           ${node.label}
@@ -420,7 +424,7 @@ function drawGraph(graphHtmlContainerId, graphData)
         }
         
         let label = `${link.shortDescription}`;
-        if (label === '')
+        if (label !== '')
         {
           // Estimate font size to fit in link length
           ctx.font = '1px playtimewithhottoddiesRg';
