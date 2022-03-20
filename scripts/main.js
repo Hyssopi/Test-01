@@ -324,13 +324,13 @@ function drawGraph(graphHtmlContainerId, graphData)
       let linkArrowColor = link.target.color;
       if ((highlightLinks.indexOf(link) === -1) && (highlightLinks.length !== 0))
       {
-        linkArrowColor += link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16);
+        linkArrowColor += (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16);
       }
       return linkArrowColor;
     })
     .linkLabel(function(link)
     {
-      if (link.fullDescriptionHtml == '')
+      if (link.fullDescriptionHtml === '')
       {
         return;
       }
@@ -355,7 +355,6 @@ function drawGraph(graphHtmlContainerId, graphData)
       
       // Draw link line
       let lineGradient = ctx.createLinearGradient(link.source.x, link.source.y, link.target.x, link.target.y);
-
       if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
       {
         lineGradient.addColorStop(0, link.source.color);
