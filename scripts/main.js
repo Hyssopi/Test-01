@@ -363,8 +363,8 @@ function drawGraph(graphHtmlContainerId, graphData)
       }
       else
       {
-        lineGradient.addColorStop(0, link.source.color + (Math.trunc(255 * .3)).toString(16));
-        lineGradient.addColorStop(1, link.target.color + (Math.trunc(255 * .3)).toString(16));
+        lineGradient.addColorStop(0, link.source.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16));
+        lineGradient.addColorStop(1, link.target.color + (Math.trunc(255 * UNSELECTED_OPACITY)).toString(16));
       }
 
       ctx.beginPath();
