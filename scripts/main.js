@@ -320,9 +320,9 @@ function drawGraph(graphHtmlContainerId, graphData)
     .linkDirectionalArrowRelPos(1)
     .linkDirectionalArrowLength(function(link)
     {
-      if ((highlightLinks.indexOf(link) !== -1) || (highlightLinks.length === 0))
+      if (highlightLinks.indexOf(link) !== -1)
       {
-        return link.direction.toUpperCase() === 'DIRECTED' ? 5.0 : 0;
+        return link.direction.toUpperCase() === 'DIRECTED' ? 4.0 : 0;
       }
       else
       {
