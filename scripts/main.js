@@ -14,7 +14,7 @@ helpAboutHtml += `
   <table style="padding: 0px 0px 10px 0px;">
     <tr>
       <td style="padding: 0px 10px 0px 0px; font-weight: bold;">GitHub Pages:</td>
-      <td><a target="_blank" href="https://hyssopi.github.io/Test-01/" style="color: #0000EE;">Miraculous Ladybug Transformation Graph</a></td>
+      <td><a target="_blank" href="https://hyssopi.github.io/Miraculous-Ladybug-Transformation-Graph/" style="color: #0000EE;">Miraculous Ladybug Transformation Graph</a></td>
     </tr>
     <tr>
       <td style="padding: 0px 10px 0px 0px; font-weight: bold;">Reference link:</td>
