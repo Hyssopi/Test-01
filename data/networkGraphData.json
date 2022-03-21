@@ -293,7 +293,11 @@
     {"id": "KING_CASH", "name": "King Cash", "description": "", "imageFilename": "KING_CASH.webp", "color": "#000000", "group": "CHARACTER"},
     {"id": "MEI_SHI", "name": "Mei Shi", "description": "The lion protector of the Prodigious.", "imageFilename": "MEI_SHI.webp", "color": "#000000", "group": "CHARACTER"},
     {"id": "MEI_SHI_STATUE", "name": "Mei Shi (Statue)", "description": "The lion protector of the Prodigious.", "imageFilename": "MEI_SHI_STATUE.webp", "color": "#000000", "group": "CHARACTER"},
-    {"id": "YANLUOSHI", "name": "YanLuoShi", "description": "", "imageFilename": "YANLUOSHI.webp", "color": "#000000", "group": "CHARACTER"}
+    {"id": "YANLUOSHI", "name": "YanLuoShi", "description": "", "imageFilename": "YANLUOSHI.webp", "color": "#000000", "group": "CHARACTER"},
+    {"id": "FANG", "name": "Fang", "description": "", "imageFilename": "FANG.webp", "color": "#000000", "group": "CHARACTER"},
+    {"id": "FANG_AKUMATIZED", "name": "Fang (Akumatized)", "description": "", "imageFilename": "FANG_AKUMATIZED.webp", "color": "#000000", "group": "CHARACTER"},
+    {"id": "ALBERT", "name": "Albert", "description": "", "imageFilename": "ALBERT.webp", "color": "#000000", "group": "CHARACTER"},
+    {"id": "ALBERT_AKUMATIZED", "name": "Albert (Akumatized)", "description": "", "imageFilename": "ALBERT_AKUMATIZED.webp", "color": "#000000", "group": "CHARACTER"}
   ],
   "edgeData":
   [
@@ -573,6 +577,8 @@
     {"sourceId": "TECHLONIZER", "targetId": "MIRACLONIZER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "CASH", "targetId": "KING_CASH", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "MEI_SHI_STATUE", "targetId": "YANLUOSHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "FANG", "targetId": "FANG_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ALBERT", "targetId": "ALBERT_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "AKUMA", "targetId": "STORMY_WEATHER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "AKUMA", "targetId": "THE_EVILLUSTRATOR", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "AKUMA", "targetId": "LADY_WIFI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
@@ -668,6 +674,8 @@
     {"sourceId": "AKUMA", "targetId": "MIRACLONIZER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "AKUMA", "targetId": "KING_CASH", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "AKUMA", "targetId": "YANLUOSHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
+    {"sourceId": "AKUMA", "targetId": "FANG_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
+    {"sourceId": "AKUMA", "targetId": "ALBERT_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "MEI_SHI_STATUE", "targetId": "MEI_SHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"}
   ]
 }
