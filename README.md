@@ -1,19 +1,20 @@
-# Katawa Shoujo Character Relation Graph
-Interactive network graph visualizing Katawa Shoujo characters and their relations.
+# Miraculous Ladybug Transformation Graph
+Interactive network graph visualizing Miraculous Ladybug characters and their transformations.
 
 ![splash](images/splash.png)
 
-References:
-- https://katawashoujo.fandom.com/wiki/Category:Characters
-- https://www.katawa-shoujo.com/characters.php
-- https://katawashoujo.fandom.com/wiki/Category:Yamaku_Students
-- https://katawashoujo.fandom.com/wiki/Hisao_Nakai
-- https://katawashoujo.fandom.com/wiki/Category:Yamaku_High_School
-- https://katawashoujo.fandom.com/wiki/Category:Places
-- https://www.spriters-resource.com/pc_computer/katawashoujo/
+## Working Demo
+TODO
 
-## GitHub Pages
-https://hyssopi.github.io/Katawa-Shoujo-Character-Relation-Graph/
+## Try It Out
+https://hyssopi.github.io/Miraculous-Ladybug-Transformation-Graph/
+
+## References
+- https://miraculousladybug.fandom.com/wiki/Kwamis
+- https://miraculousladybug.fandom.com/wiki/Renlings
+- https://miraculousladybug.fandom.com/wiki/Miraculous_holders
+- https://miraculousladybug.fandom.com/wiki/Akumatized_villains
+- https://miraculousladybug.fandom.com/wiki/United_Heroez
 
 ## Prerequisites
 - (To build) `npm` installed.
