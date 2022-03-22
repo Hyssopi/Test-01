@@ -15,6 +15,8 @@ https://hyssopi.github.io/Miraculous-Ladybug-Transformation-Graph/
 - https://miraculousladybug.fandom.com/wiki/Miraculous_holders
 - https://miraculousladybug.fandom.com/wiki/Akumatized_villains
 - https://miraculousladybug.fandom.com/wiki/United_Heroez
+- https://miraculousladybug.fandom.com/wiki/Category:Characters
+- https://miraculousladybug.fandom.com/wiki/Category:Character_designs
 
 ## Prerequisites
 - (To build) `npm` installed.
