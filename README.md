@@ -1,5 +1,5 @@
 # Miraculous Ladybug Transformation Graph
-Interactive network graph visualizing Miraculous Ladybug characters and their transformations.
+Interactive network graph visualizing Miraculous Ladybug characters and their transformation relations.
 
 ![splash](images/splash.png)
 

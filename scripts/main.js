@@ -10,7 +10,7 @@ const NODE_IMAGE_DIRECTORY_PATH = './images/nodes/';
 let helpAboutHtml = '';
 helpAboutHtml += `
 <div style="margin: 10px 0px 10px 10px; line-height: 2; font-size: 16px; font-family: playtimewithhottoddiesRg;">
-  <div style="padding: 0px 0px 10px 0px;">Interactive network graph visualizing Miraculous Ladybug<br>transformations and their relations.</div>
+  <div style="padding: 0px 0px 10px 0px;">Interactive network graph visualizing Miraculous Ladybug <br>characters and their transformation relations.</div>
   <table style="padding: 0px 0px 10px 0px;">
     <tr>
       <td style="padding: 0px 10px 0px 0px; font-weight: bold;">GitHub Pages:</td>
