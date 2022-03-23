@@ -203,6 +203,12 @@
     {"id": "ROGERCOP", "name": "Rogercop", "description": "", "imageFilename": "ROGERCOP.webp", "color": "#252B59", "group": "CHARACTER"},
     {"id": "OTIS_CESAIRE", "name": "Otis Césaire", "description": "", "imageFilename": "OTIS_CESAIRE.webp", "color": "#EDCC8F", "group": "CHARACTER"},
     {"id": "ANIMAN", "name": "Animan", "description": "", "imageFilename": "ANIMAN.webp", "color": "#170B30", "group": "CHARACTER"},
+    {"id": "ANIMAN_BALD_EAGLE", "name": "Animan (Bald Eagle)", "description": "", "imageFilename": "ANIMAN_BALD_EAGLE.webp", "color": "#431D03", "group": "CHARACTER"},
+    {"id": "ANIMAN_LADYBUG", "name": "Animan (Ladybug)", "description": "", "imageFilename": "ANIMAN_LADYBUG.webp", "color": "#782328", "group": "CHARACTER"},
+    {"id": "ANIMAN_BEAR", "name": "Animan (Bear)", "description": "", "imageFilename": "ANIMAN_BEAR.webp", "color": "#782401", "group": "CHARACTER"},
+    {"id": "ANIMAN_GORILLA", "name": "Animan (Gorilla)", "description": "", "imageFilename": "ANIMAN_GORILLA.webp", "color": "#6E6878", "group": "CHARACTER"},
+    {"id": "ANIMAN_TYRANNOSAURUS", "name": "Animan (Tyrannosaurus)", "description": "", "imageFilename": "ANIMAN_TYRANNOSAURUS.webp", "color": "#98974D", "group": "CHARACTER"},
+    {"id": "ANIMAN_CATFISH", "name": "Animan (Catfish)", "description": "", "imageFilename": "ANIMAN_CATFISH.webp", "color": "#3E3138", "group": "CHARACTER"},
     {"id": "ARMAND_D_ARGENCOURT", "name": "Armand D'Argencourt", "description": "", "imageFilename": "ARMAND_D_ARGENCOURT.webp", "color": "#CDC3C8", "group": "CHARACTER"},
     {"id": "DARKBLADE", "name": "Darkblade", "description": "", "imageFilename": "DARKBLADE.webp", "color": "#A1B2B0", "group": "CHARACTER"},
     {"id": "JALIL_KUBDEL", "name": "Jalil Kubdel", "description": "", "imageFilename": "JALIL_KUBDEL.webp", "color": "#6A3F33", "group": "CHARACTER"},
@@ -513,6 +519,12 @@
     {"sourceId": "ROGER_RAINCOMPRIX", "targetId": "ROGERCOP", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "MAX_KANTE", "targetId": "GAMER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "OTIS_CESAIRE", "targetId": "ANIMAN", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ANIMAN", "targetId": "ANIMAN_BALD_EAGLE", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ANIMAN", "targetId": "ANIMAN_LADYBUG", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ANIMAN", "targetId": "ANIMAN_BEAR", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ANIMAN", "targetId": "ANIMAN_GORILLA", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ANIMAN", "targetId": "ANIMAN_TYRANNOSAURUS", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "ANIMAN", "targetId": "ANIMAN_CATFISH", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "ARMAND_D_ARGENCOURT", "targetId": "DARKBLADE", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "JALIL_KUBDEL", "targetId": "THE_PHARAOH", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "ALIX_KUBDEL", "targetId": "TIMEBREAKER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
@@ -600,6 +612,7 @@
     {"sourceId": "TECHLONIZER", "targetId": "MIRACLONIZER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "CASH", "targetId": "KING_CASH", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "MEI_SHI_STATUE", "targetId": "YANLUOSHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
+    {"sourceId": "MEI_SHI_STATUE", "targetId": "MEI_SHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "FANG", "targetId": "FANG_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "ALBERT", "targetId": "ALBERT_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"},
     {"sourceId": "AKUMA", "targetId": "STORMY_WEATHER", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
@@ -698,7 +711,6 @@
     {"sourceId": "AKUMA", "targetId": "KING_CASH", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "AKUMA", "targetId": "YANLUOSHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
     {"sourceId": "AKUMA", "targetId": "FANG_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
-    {"sourceId": "AKUMA", "targetId": "ALBERT_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"},
-    {"sourceId": "MEI_SHI_STATUE", "targetId": "MEI_SHI", "shortDescription": "", "fullDescriptionHtml": "", "direction": "DIRECTED"}
+    {"sourceId": "AKUMA", "targetId": "ALBERT_AKUMATIZED", "shortDescription": "", "fullDescriptionHtml": "", "direction": "NONE"}
   ]
 }
